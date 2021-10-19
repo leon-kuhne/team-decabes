@@ -1,0 +1,16 @@
+# Git
+alias gs='git status'
+alias gfp='git fetch --prune'
+alias gpr='git pull --rebase'
+alias grh='git add . && git reset --hard' # Use with caution, blows away all local changes
+
+# Makes pull do a rebase by default rather than generating
+# a merge commit
+git config --global pull.rebase true
+
+# Make a few aliases in git
+git config --global alias.dc 'diff --cached'
+git config --global alias.pr 'pull --rebase'
+git config --global alias.fp 'fetch --prune'
+git config --global alias.co 'checkout'
+git config --global alias.hist "log --pretty=format:'%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(red)%s %C(bold red){{%an}}%C(reset) %C(blue)%d%C(reset)' --graph --date=short"

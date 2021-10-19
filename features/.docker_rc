@@ -1,0 +1,7 @@
+# Docker
+alias d='docker'
+alias dc='docker compose'
+
+# Used to switch docker compose to point to different compose files
+alias dc-with-app="alias dc='docker compose -f docker-compose.with-app.yml' && echo 'Docker compose is now working off docker-compose.with-app.yml'"
+alias dc-regular="alias dc='docker compose' && echo 'Docker compose is now working off docker-compose.yml'"
